@@ -21,9 +21,12 @@ print("Vector store created and saved locally as 'faiss_index'")
 
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
 #Load LLM
-llm = ChatGroq(api_key="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", model_name="llama-3.1-8b-instant")
+llm = ChatGroq(api_key="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", 
+               model_name="llama-3.1-8b-instant",
+               temperature=0.7)
 
 #reload vectorstore
 vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
@@ -31,7 +34,8 @@ vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deseri
 #Create retrieval-based QA chain
 qa_chain = RetrievalQA.from_chain_type(llm=llm,
                                         chain_type="stuff",
-                                        retriever=vectorstore.as_retriever())
+                                        retriever=vectorstore.as_retriever()
+                                       )
 
 #Query
 query = "What is his education background?"
