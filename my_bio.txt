@@ -1,0 +1,82 @@
+PERSONAL INFO AND BACKGROUND.
+My name is Lewis M. Warui(Lewis Miano Warui). Friends also call me Lincoln or Sino. They are also my nicknames. Born and raised in
+Kiandai,Kirinyaga County in Kenya. 
+My family practices large-scale farming of maize, sweet potatoes, tomatoes but also grows bananas, beans, mangoes,
+avocadoes,lemons, sugarcanes, cassavas, guavas, yams, rice and many others. My father also rears domestic animals 
+like dairy cows and also keeps chicken.
+I speak  English, Kiswahili and Kikuyu fluently and am a beginner in Spanish though am also taking some classes on 
+the same.
+Currently i live in Eldoret, Uashin Gishu County, Kenya.
+I have some friends like Glen, Felix, Kelvin, among others.
+
+EDUCATION.
+I started my basic education at Kiandangae Primary School and later joined St.Peter's Gathuthiini High School where 
+i managed to acquire a good grade to join a tertiary level institution.
+I was placed at University of Eldoret, Main Campus to study Bachelor of Science in Biochemistry.
+
+TECH JOURNEY.
+I developed my tech passion since when the moment I joined high school. Unfortunately, i wasn't chosen to be among the group of students to persue Computer as a subject hence that became a challenge in the future because no tech college would accept me as their student having not studied Computer.I wandered for long in search of a school until a friend told me about The African Leadership University (ALx).
+I later applied to be the next cohort. Fortunately, they had simple terms and conditions and so it was easy to join and start learning, although the fees were much expensive by then.
+Alx equiped me with Software Engineering Skills.
+I was able to master Backend Web Development skills i.e Python, MySQL, Django, Git controls and many more.
+I was taught professional skills of a techie and also the use of various AI tools of production like image and video generational apps and websites, text and code writing tools, Music Creation tools among others, and i later graduated with three certificates from Alx; Certificate in Backend Web Development, Certificate in AI Starter Kit, and Certificate in Professional Skills.
+This made me curious of how these AI tools operates and how they are engineered. I therefore promised myself to study Machine Learning and Artificial Intelligence later and learn how to architect them all by myself and create a chatbot of my own.
+After graduating from Alx, i applied for many internships and entry-level jobs but all my efforts proved futile. I therfore decided to upgrade my skills as i await for any response. 
+I decided to take Frontend Web Development classes but now all on myself since i was also broke to afford learning fee. I used online resources and AI learning tools in combination with YouTube tutorials. I learnt HTML, CSS, JavaScript and React.With that i knew that i would be more marketable than before since i had more hand-on skills.
+However, i never landed in any internship or jobs and so i decided to add even more advanced skills.
+And so i dived into Machine Learning, learnt Maths for ML: Linear Algebra, Statistics and Probability, Calculus. I also learnt Supervised, Unsupervised and Deep Learning. I was able to train models and evaluate them using scikit-learn library and so i dived into some simple Kaggle Competitions to show case my new skills and also to experience and work with real datasets.
+I later learnt how to integrate ML models into APIs and use them in websites, train and use HuggingFace Models and built my first conversational AI. I was so excited that i could build a simple ChatGPT hahaha.
+After some weeks of practice, i decided to also learn Agentic AI, how to build workflows, agentic systems and multi-agentic systems using LangChain.
+I therefore enrolled at Ready Tensor School.
+I learnt how to train an Agent to use own information, give instructions and also keep memory among other exciting lessons.
+
+PROJECTS.
+I've worked on many projects of which most of them i pushed them to my GitHub account, you can check them out https://github.com/Ole-Lewi
+Some of them include:
+-Engineered an ML-powered Student Performance API.
+-Trained ML models to build an NLP-Review Analyzer Sentiment Cluster.
+-Employed an ML model for the Titanic Dataset.
+-Created a LincolnBot, a chatbot that uses LangChain to answer personal questions.
+-Library Project -
+-Movie Review Website -
+-Collaborated on creating an E-Commerce website backend.
+-Collaborated on building Digital School Management System.
+-Built a first simple responsive portfolio using React.
+
+
+SKILLS.
+Backend Web Development - Python, MySQL, REST APIs, Django
+Machine Learning - Supervised, Unsupervised, Deep Learning
+Artificial Intelligence - LangChain, LangSmith, RAG, Transformers, HuggingFace, OpenAI, Groq, Gemini and LLaMA, Agentic AI
+Soft Skills - Self-Driven, Problem-Solver, Resilient, Dynamic, Critical Thinker, Creative, Leader.
+
+PERSONALITIES & HOBBIES.
+Am a football fan and i also enjoy watching and playing soccer. Moreso am a Liverpool Supporter and ooh i love football discussions especially Manchester United & Chelsea & Arsenal hate watch 😂😂haha.
+Am also a Messi fan and loves GOAT debates between Messi and Ronaldo, i really enjoy creating and growing that arguement among football fans hahaha😂😂😂.
+I also love working out and exercising my body.
+Living a comrade life and creating humour in simple things to generate smily faces around, furthermore, "Why so serious?"
+I also sell wall stickers.
+Mom and Dad are my heroes and my greatest motivations in life.
+
+LIFE LESSONS AND STORIES
+I've worked in so many casual labour jobs some of which were so hard and difficult but always gave me a motivation to stay focused and keep pushing with life.
+I've also experienced heartbreaks where i learnt not to focus on love so much rather focus on self-improvement and self-growth.
+I choose independence, resilience and progress.
+
+GOALS AND AMBITIONS.
+I believe and know that AI is the next phase of technology and am aware that it's gonna replace a lot of outdated jobs and so the best thing is to be part of it rather than fight it.
+I want to someday help build AI-powered intelligent systems that solve problems and bring change to a new and better world.
+I also love the field of Medicine, Finance and Economics and would like to create systems that solves problems in related fields.
+I want to participate in the transition that is about to happen in the tech field.
+
+
+CONTACTS.
+To get in contact with me:
+Full Name: Lewis Miano Warui
+Email: lewisino666@gmail.com
+LinkedIn: https://www.linkedin.com/in/lewis-miano-b91329321/
+GitHub: https://github.com/Ole-Lewi
+Tel: +254716652003
+WhatsApp: +254716652003
+FaceBook: Sino Si
+Twitter(X): Kol Mi Laywih
