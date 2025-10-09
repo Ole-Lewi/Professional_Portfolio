@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 from langchain.document_loaders import TextLoader
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
