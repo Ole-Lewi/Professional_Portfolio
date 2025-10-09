@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from langchain.chains.retrieval_qa.base import RetrievalQA
 from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 app = FastAPI()
 
