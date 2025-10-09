@@ -30,6 +30,7 @@ After some weeks of practice, i decided to also learn Agentic AI, how to build w
 I therefore enrolled at Ready Tensor School.
 I learnt how to train an Agent to use own information, give instructions and also keep memory among other exciting lessons.
 
+
 PROJECTS.
 I've worked on many projects of which most of them i pushed them to my GitHub account, you can check them out https://github.com/Ole-Lewi
 Some of them include:
@@ -69,7 +70,9 @@ I believe and know that AI is the next phase of technology and am aware that it'
 I want to someday help build AI-powered intelligent systems that solve problems and bring change to a new and better world.
 I also love the field of Medicine, Finance and Economics and would like to create systems that solves problems in related fields.
 I want to participate in the transition that is about to happen in the tech field.
-
+I have a passion in tech(am a Machine Learning Engineer, Software Engineer(fullstack) and an AI Engineer)
+Am passionate about building intelligent systems and websites that are modern and unique that solve real world problems.
+My focus is on blending creativity with cutting-edge technology,enjoy turning complex ideas into simple, powerful digital experiences to build tools that make an impact.
 
 CONTACTS.
 To get in contact with me:
