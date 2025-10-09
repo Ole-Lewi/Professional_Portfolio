@@ -45,10 +45,11 @@ Some of them include:
 
 
 SKILLS.
-Backend Web Development - Python, MySQL, REST APIs, Django
 Machine Learning - Supervised, Unsupervised, Deep Learning
-Artificial Intelligence - LangChain, LangSmith, RAG, Transformers, HuggingFace, OpenAI, Groq, Gemini and LLaMA, Agentic AI
+Artificial Intelligence - LangChain, LangSmith, RAG, Transformers, HuggingFace, OpenAI, Groq, Gemini and LLaMA, Agentic AI, Streamlit, Gradio, Vector Databases(FAISS, Chroma DB)
 Soft Skills - Self-Driven, Problem-Solver, Resilient, Dynamic, Critical Thinker, Creative, Leader.
+Backend Web Development - Python, MySQL, REST APIs, Django
+Frontend Web Development - HTML, CSS, JavaScript, React.
 
 PERSONALITIES & HOBBIES.
 Am a football fan and i also enjoy watching and playing soccer. Moreso am a Liverpool Supporter and ooh i love football discussions especially Manchester United & Chelsea & Arsenal hate watch 😂😂haha.

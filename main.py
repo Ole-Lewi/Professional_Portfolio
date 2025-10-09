@@ -20,7 +20,8 @@ vectorstore.save_local("faiss_index")       # Save the vector store locally
 print("Vector store created and saved locally as 'faiss_index'")
 
 from langchain_groq import ChatGroq
-from langchain.chains import RetrievalQA
+from langchain.chains.retrieval_qa.base import RetrievalQA
+
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
 #Load LLM
@@ -37,7 +38,15 @@ qa_chain = RetrievalQA.from_chain_type(llm=llm,
                                         retriever=vectorstore.as_retriever()
                                        )
 
-#Query
-query = "What is his education background?"
-answer = qa_chain.run(query)
-print("AI:", answer)
+#Creating  the Streamlit app
+import streamlit as st
+st.set_page_config(page_title="Lynne 🤖", page_icon="🦾")
+st.title("🦾 Lynne – Ask Me Anything About Lewis")
+st.write("Hi am Lynne!")
+
+#User input
+user_query = st.text_input("Ask something about me...")
+if user_query:
+    with st.spinner("Thinking... 🤔"):
+        answer = qa_chain.run({'query': user_query})
+        st.markdown(f"### 🤖 LincolnBot:\n{answer}")
