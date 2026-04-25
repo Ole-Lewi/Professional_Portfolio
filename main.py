@@ -1,11 +1,19 @@
 from dotenv import load_dotenv
-from langchain.document_loaders import TextLoader
-from langchain_huggingface.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import TextLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+import os
 
 # Load environment variables from .env file
-load_dotenv()
+
+from pathlib import Path
+
+env_path = Path(__file__).parent / ".env"
+print("Looking for .env at:", env_path)
+print("File exists:", env_path.exists())
+
+
 
 #Load .txt file and split into chunks
 loader = TextLoader("my_bio.txt")
@@ -20,12 +28,12 @@ vectorstore.save_local("faiss_index")       # Save the vector store locally
 print("Vector store created and saved locally as 'faiss_index'")
 
 from langchain_groq import ChatGroq
-from langchain.chains.retrieval_qa.base import RetrievalQA
+from langchain.chains import RetrievalQA
 
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-
+import os
 #Load LLM
-llm = ChatGroq(api_key="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", 
+llm = ChatGroq(api_key=os.getenv("GROQ_API_KEY"), 
                model_name="llama-3.1-8b-instant",
                temperature=0.7)
 
@@ -48,5 +56,5 @@ st.write("Hi am Lynne!")
 user_query = st.text_input("Ask something about me...")
 if user_query:
     with st.spinner("Thinking... 🤔"):
-        answer = qa_chain.run({'query': user_query})
-        st.markdown(f"### 🤖 LincolnBot:\n{answer}")
+        answer = qa_chain.invoke({"query": user_query})["result"]
+        st.markdown(f"### 🤖 Lincolnbot:\n{answer}")
