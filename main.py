@@ -1,3 +1,21 @@
+
+OFFLINE_MODE = True  # Change to True when at home
+
+if OFFLINE_MODE:
+    from langchain_ollama import ChatOllama, OllamaEmbeddings
+    llm = ChatOllama(model="llama3.2:1b")
+    embeddings = OllamaEmbeddings(model="nomic-embed-text")
+else:
+    from langchain_groq import ChatGroq
+    from langchain_cohere import CohereEmbeddings
+    llm = ChatGroq(api_key=os.getenv("GROQ_API_KEY"), model_name="llama-3.1-8b-instant")
+    embeddings = CohereEmbeddings(cohere_api_key=os.getenv("COHERE_API_KEY"), model="embed-english-light-v3.0")
+
+
+
+
+
+
 from dotenv import load_dotenv
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
