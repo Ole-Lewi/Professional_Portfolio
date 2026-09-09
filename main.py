@@ -1,5 +1,5 @@
 
-OFFLINE_MODE = True  # Change to True when at home
+OFFLINE_MODE = False  # Change to True when offline
 
 if OFFLINE_MODE:
     from langchain_ollama import ChatOllama, OllamaEmbeddings
@@ -40,7 +40,7 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20
 chunks = text_splitter.split_documents(documents)
 
 #Create embeddings and store in vector database
-embeddings = CohereEmbeddings(model="embed-english-light-v3.0", cohere_api_key=os.getenv("COHERE_API_KEY"))
+
 vectorstore = FAISS.from_documents(chunks, embeddings,) 
 vectorstore.save_local("faiss_index")       # Save the vector store locally
 print("Vector store created and saved locally as 'faiss_index'")
@@ -50,10 +50,7 @@ from langchain.chains import RetrievalQA
 
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 import os
-#Load LLM
-llm = ChatGroq(api_key=os.getenv("GROQ_API_KEY"), 
-               model_name="llama-3.1-8b-instant",
-               temperature=0.7)
+
 
 #reload vectorstore
 vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)

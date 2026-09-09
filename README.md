@@ -1,6 +1,6 @@
 # 🦾 Lynne — AI Portfolio Assistant
 Lynne is a RAG-powered chatbot that answers questions about Lewis Miano (Lincoln) — his background, skills, projects, and experience.
-Instead of a static portfolio page, Lynne lets anyone have a live conversation with an AI that knows Lincoln personally. Built and deployed as a real production application.
+Instead of a static portfolio page, Lynne lets anyone have a live conversation with an AI that knows me personally. Built and deployed as a real production application.
 
 # 🔗 Live Demo: https://professional-portfolio-5.onrender.com
 
@@ -31,7 +31,13 @@ The answer is streamed back through a Streamlit interface
 
 
 # Tech Stack
-LayerToolLLMllama-3.1-8b-instant via Groq APIEmbeddingsCohere embed-english-light-v3.0Vector StoreFAISS (local)OrchestrationLangChain (RetrievalQA)FrontendStreamlitDeploymentRender
+-LayerToolLLM-llama-3.1-8b-instant via Groq 
+-APIEmbeddings-Cohere 
+-embed-english-light-v3.0
+-Vector Store-FAISS (local)
+-OrchestratioLangChain (RetrievalQA)
+-Frontend-Streamlit
+-Deployment-Render
 
 # Key Engineering Decisions
 Why Cohere embeddings instead of HuggingFace?
@@ -74,13 +80,12 @@ bashstreamlit run main.py
 
 # What I Learned Building This
 
-Debugging LangChain version conflicts between community and core packages
-How Render's 512MB RAM ceiling forces real architectural trade-offs
-Why .env path loading order matters when multiple projects share a machine
-The value of API-based vs. local embeddings for constrained deployment environments
+-Debugging LangChain version conflicts between community and core packages
+-How Render's 512MB RAM ceiling forces real architectural trade-offs
+-Why .env path loading order matters when multiple projects share a machine
+-The value of API-based vs. local embeddings for constrained deployment environments
 
 
 # Author
 Lewis Miano (Lincoln)
-ALX Backend Web Dev · ML/NLP · Agentic AI Systems
-GitHub · Live App
+ML/NLP · Agentic AI Systems
