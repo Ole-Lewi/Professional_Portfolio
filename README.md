@@ -35,7 +35,7 @@ The answer is streamed back through a Streamlit interface
 -APIEmbeddings-Cohere 
 -embed-english-light-v3.0
 -Vector Store-FAISS (local)
--OrchestratioLangChain (RetrievalQA)
+-Orchestration-LangChain (RetrievalQA)
 -Frontend-Streamlit
 -Deployment-Render
 
