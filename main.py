@@ -1,6 +1,8 @@
 
 OFFLINE_MODE = False  # Change to True when offline
 
+import os
+
 if OFFLINE_MODE:
     from langchain_ollama import ChatOllama, OllamaEmbeddings
     llm = ChatOllama(model="llama3.2:1b")
@@ -8,7 +10,7 @@ if OFFLINE_MODE:
 else:
     from langchain_groq import ChatGroq
     from langchain_cohere import CohereEmbeddings
-    llm = ChatGroq(api_key=os.getenv("GROQ_API_KEY"), model_name="llama-3.1-8b-instant")
+    llm = ChatGroq(api_key=os.getenv("GROQ_API_KEY"), model_name=os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"))
     embeddings = CohereEmbeddings(cohere_api_key=os.getenv("COHERE_API_KEY"), model="embed-english-light-v3.0")
 
 
@@ -21,10 +23,10 @@ from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_cohere import CohereEmbeddings
 from langchain_community.vectorstores import FAISS
-import os
+
 
 # Load environment variables from .env file
-
+load_dotenv()
 from pathlib import Path
 
 env_path = Path(__file__).parent / ".env"
@@ -49,7 +51,6 @@ from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
 
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-import os
 
 
 #reload vectorstore

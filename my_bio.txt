@@ -1,81 +1,143 @@
 PERSONAL INFO AND BACKGROUND.
-My name is Lewis M. Warui(Lewis Miano Warui). Friends also call me Lincoln or Sino. They are also my nicknames. Born and raised in
-Kiandai,Kirinyaga County in Kenya. 
-My family practices large-scale farming of maize, sweet potatoes, tomatoes but also grows bananas, beans, mangoes,
-avocadoes,lemons, sugarcanes, cassavas, guavas, yams, rice and many others. My father also rears domestic animals 
-like dairy cows and also keeps chicken.
-I speak  English, Kiswahili and Kikuyu fluently and am a beginner in Spanish though am also taking some classes on 
-the same.
-Currently i live in Eldoret, Uashin Gishu County, Kenya.
-I have some friends like Glen, Felix, Kelvin, among others.
+I am Lewis Miano Warui (Lincoln) — an Agentic AI Engineer and Full-Stack Developer based in 
+Eldoret, Kenya. I specialize in designing and building intelligent systems that think, 
+act and reason autonomously — from RAG pipelines and LangGraph agents to multi-agent 
+systems with Human-In-The-Loop oversight and offline-first architectures.
+
+I come from an agricultural family background — my family practices large-scale farming.
+
+I am fluent in English, Kiswahili and Kikuyu, and am currently learning Spanish.
 
 EDUCATION.
-I started my basic education at Kiandangae Primary School and later joined St.Peter's Gathuthiini High School where 
-i managed to acquire a good grade to join a tertiary level institution.
-I was placed at University of Eldoret, Main Campus to study Bachelor of Science in Biochemistry.
+I began my foundational education at Kiandangae Primary School and proceeded to
+St. Peter's Gathuthiini High School, where I attained strong academic results.
+I was subsequently placed at the University of Eldoret
 
 TECH JOURNEY.
-I developed my tech passion since when the moment I joined high school. Unfortunately, i wasn't chosen to be among the group of students to persue Computer as a subject hence that became a challenge in the future because no tech college would accept me as their student having not studied Computer.I wandered for long in search of a school until a friend told me about The African Leadership University (ALx).
-I later applied to be the next cohort. Fortunately, they had simple terms and conditions and so it was easy to join and start learning, although the fees were much expensive by then.
-Alx equiped me with Software Engineering Skills.
-I was able to master Backend Web Development skills i.e Python, MySQL, Django, Git controls and many more.
-I was taught professional skills of a techie and also the use of various AI tools of production like image and video generational apps and websites, text and code writing tools, Music Creation tools among others, and i later graduated with three certificates from Alx; Certificate in Backend Web Development, Certificate in AI Starter Kit, and Certificate in Professional Skills.
-This made me curious of how these AI tools operates and how they are engineered. I therefore promised myself to study Machine Learning and Artificial Intelligence later and learn how to architect them all by myself and create a chatbot of my own.
-After graduating from Alx, i applied for many internships and entry-level jobs but all my efforts proved futile. I therfore decided to upgrade my skills as i await for any response. 
-I decided to take Frontend Web Development classes but now all on myself since i was also broke to afford learning fee. I used online resources and AI learning tools in combination with YouTube tutorials. I learnt HTML, CSS, JavaScript and React.With that i knew that i would be more marketable than before since i had more hand-on skills.
-However, i never landed in any internship or jobs and so i decided to add even more advanced skills.
-And so i dived into Machine Learning, learnt Maths for ML: Linear Algebra, Statistics and Probability, Calculus. I also learnt Supervised, Unsupervised and Deep Learning. I was able to train models and evaluate them using scikit-learn library and so i dived into some simple Kaggle Competitions to show case my new skills and also to experience and work with real datasets.
-I later learnt how to integrate ML models into APIs and use them in websites, train and use HuggingFace Models and built my first conversational AI. I was so excited that i could build a simple ChatGPT hahaha.
-After some weeks of practice, i decided to also learn Agentic AI, how to build workflows, agentic systems and multi-agentic systems using LangChain.
-I therefore enrolled at Ready Tensor School.
-I learnt how to train an Agent to use own information, give instructions and also keep memory among other exciting lessons.
+My passion for technology was ignited during my high school years. However, not having
+studied Computer Science as a subject created barriers when seeking admission into
+technical institutions. After an extensive search, I discovered ALX Africa — an institution
+with accessible entry requirements — and enrolled in their Software Engineering program.
 
+At ALX, I developed strong Backend Web Development skills including Python, MySQL, Django,
+Git version control, REST APIs, and professional software engineering practices. I also
+gained exposure to AI productivity tools used in production environments. Upon completion,
+I was awarded three certificates: Certificate in Backend Web Development, Certificate in
+AI Starter Kit, and Certificate in Professional Skills.
+
+This experience sparked a deeper curiosity — I wanted to understand not just how to use
+AI tools, but how to architect and engineer them from the ground up.
+
+Following my graduation from ALX, I independently pursued Frontend Web Development using
+online resources, YouTube tutorials and AI learning tools, gaining hands-on skills in
+HTML, CSS, JavaScript and React — making me a fullstack-capable engineer.
+
+I then systematically studied Machine Learning, covering the mathematical foundations:
+Linear Algebra, Statistics and Probability, and Calculus. I progressed through Supervised
+Learning, Unsupervised Learning and Deep Learning, training and evaluating models using
+Scikit-learn and participating in Kaggle competitions to work with real-world datasets.
+I further learnt to integrate ML models into APIs, work with HuggingFace models, and
+built my first conversational AI system.
+
+Driven by the vision of building intelligent systems that think, act and reason, I then
+specialized in Agentic AI — enrolling at Ready Tensor School where I learnt to build
+workflows, agentic systems and multi-agent systems using LangChain and LangGraph.
+I trained agents to use custom knowledge bases, maintain memory, follow instructions,
+and operate with Human-In-The-Loop(HITL) oversight. I also gained expertise in agent
+evaluation using RAGAS and DeepEval frameworks.
+
+A key aspect of my engineering philosophy is building systems that work under real
+constraints — most of my development has been done on a Lenovo ThinkPad T470s with
+limited RAM and intermittent connectivity. This shaped an offline-first approach:
+building agents that switch gracefully between cloud APIs and locally-running models
+depending on connectivity, ensuring systems degrade gracefully rather than fail completely.
 
 PROJECTS.
-I've worked on many projects of which most of them i pushed them to my GitHub account, you can check them out https://github.com/Ole-Lewi
-Some of them include:
--Engineered an ML-powered Student Performance API.
--Trained ML models to build an NLP-Review Analyzer Sentiment Cluster.
--Employed an ML model for the Titanic Dataset.
--Created a LincolnBot, a chatbot that uses LangChain to answer personal questions.
--Library Project -
--Movie Review Website -
--Collaborated on creating an E-Commerce website backend.
--Collaborated on building Digital School Management System.
--Built a first simple responsive portfolio using React.
+All projects are available on my GitHub: https://github.com/Ole-Lewi
 
+AGENTIC AI PROJECTS:
+- Lynne — A RAG chatbot deployed live on Render that answers personal and professional
+  questions about me. Integrates online/offline switching between cloud and local models.
+  Stack: LangChain, FAISS, Cohere, Groq, Streamlit, Render.
+  Live: https://professional-portfolio-5.onrender.com
+
+- Local AI Agent (ReAct vs LangGraph) — Two agent architectures compared head-to-head,
+  running fully offline on local hardware.
+  Stack: LangChain, LangGraph, Ollama, Llama3.2.
+
+- Agentic AI RAG Pipeline — A context-aware research agent with prompt injection defenses
+  and retrieval-augmented generation capabilities.
+  Stack: LangChain, FAISS, HuggingFace, Groq.
+
+- Multi-Agent Code Assistant (In Progress) — A multi-agent, multi-tool system that
+  supervises the writing, reviewing, debugging and improvement of code, integrated with
+  Human-In-The-Loop(HITL). Operates both online and offline, switching between cloud
+  APIs and local models based on connectivity conditions.
+
+MACHINE LEARNING & NLP PROJECTS:
+- Student Performance API — An ML-powered REST API for predicting student academic
+  performance. Stack: Python, Scikit-learn, FastAPI, Render.
+
+- NLP Review Analyzer — Unsupervised sentiment clustering on 1,400+ customer reviews,
+  deployed as a FastAPI service.
+  Stack: NLTK, TF-IDF, KMeans, FastAPI, Render.
+
+- Titanic ML Benchmark — Five classification models benchmarked on the Kaggle Titanic
+  dataset. Stack: XGBoost, Random Forest, Scikit-learn.
+
+WEB DEVELOPMENT PROJECTS:
+- Professional Portfolio — Responsive React portfolio showcasing projects and skills.
+- Movie Review Website — Full-stack Django web application. ALX Backend Capstone (2023).
+  Stack: Python, Django, SQLite, HTML/CSS/JS.
+- E-Commerce Backend — Collaborated on building a scalable e-commerce backend system.
+- Digital School Management System — Collaborated on building a school management platform.
 
 SKILLS.
-Machine Learning - Supervised, Unsupervised, Deep Learning
-Artificial Intelligence - LangChain, LangSmith, RAG, Transformers, HuggingFace, OpenAI, Groq, Gemini and LLaMA, Agentic AI, Streamlit, Gradio, Vector Databases(FAISS, Chroma DB)
-Soft Skills - Self-Driven, Problem-Solver, Resilient, Dynamic, Critical Thinker, Creative, Leader.
-Backend Web Development - Python, MySQL, REST APIs, Django
-Frontend Web Development - HTML, CSS, JavaScript, React.
+Agentic AI — LangChain, LangGraph, LangSmith, RAG, Multi-Agent Systems,
+Human-In-The-Loop(HITL), Prompt Engineering, Agent Evaluation(RAGAS, DeepEval)
+Vector Databases — FAISS, ChromaDB
+LLMs & AI Tools — Groq, Cohere, Ollama, HuggingFace, OpenAI, Gemini, Transformers,
+Streamlit, Gradio
+Machine Learning — Supervised Learning, Unsupervised Learning, Deep Learning,
+Scikit-learn, XGBoost, TensorFlow, NLTK, TF-IDF, KMeans
+Backend Web Development — Python, Django, FastAPI, REST APIs, MySQL, PostgreSQL, SQLite
+Frontend Web Development — HTML, CSS, JavaScript, React
+Dev & Deployment — Git, GitHub, Render, Docker(learning), Linux, VS Code
+Soft Skills — Self-Driven, Problem-Solver, Resilient, Adaptable, Critical Thinker,
+Creative, Leadership
 
 PERSONALITIES & HOBBIES.
-Am a football fan and i also enjoy watching and playing soccer. Moreso am a Liverpool Supporter and ooh i love football discussions especially Manchester United & Chelsea & Arsenal hate watch 😂😂haha.
-Am also a Messi fan and loves GOAT debates between Messi and Ronaldo, i really enjoy creating and growing that arguement among football fans hahaha😂😂😂.
-I also love working out and exercising my body.
-Living a comrade life and creating humour in simple things to generate smily faces around, furthermore, "Why so serious?"
-I also sell wall stickers.
-Mom and Dad are my heroes and my greatest motivations in life.
+Outside of technology, I am an avid football fan and a proud Liverpool FC supporter.
+I enjoy football discussions and the classic Messi vs Ronaldo GOAT debate — a conversation
+I thoroughly enjoy keeping alive among football enthusiasts.
+I am also committed to physical fitness and enjoy working out regularly.
+I believe in creating a positive environment around me and approaching life with humour
+and lightness — "Why so serious?"
 
-LIFE LESSONS AND STORIES
-I've worked in so many casual labour jobs some of which were so hard and difficult but always gave me a motivation to stay focused and keep pushing with life.
-I've also experienced heartbreaks where i learnt not to focus on love so much rather focus on self-improvement and self-growth.
-I choose independence, resilience and progress.
+LIFE LESSONS AND STORIES.
+My journey has not been without challenges. I have worked numerous casual labour jobs —
+some physically demanding — which only strengthened my resolve to stay focused and
+committed to long-term growth.
+I have learnt that self-improvement and personal growth must take priority above all else.
+I choose independence, resilience and consistent progress as my guiding principles.
 
 GOALS AND AMBITIONS.
-I believe and know that AI is the next phase of technology and am aware that it's gonna replace a lot of outdated jobs and so the best thing is to be part of it rather than fight it.
-I want to someday help build AI-powered intelligent systems that solve problems and bring change to a new and better world.
-I also love the field of Medicine, Finance and Economics and would like to create systems that solves problems in related fields.
-I want to participate in the transition that is about to happen in the tech field.
-I have a passion in tech(am a Machine Learning Engineer, Software Engineer(fullstack) and an AI Engineer)
-Am passionate about building intelligent systems and websites that are modern and unique that solve real world problems.
-My focus is on blending creativity with cutting-edge technology,enjoy turning complex ideas into simple, powerful digital experiences to build tools that make an impact.
+I firmly believe that Artificial Intelligence is the defining technological shift of our
+generation — one that will reshape industries, eliminate outdated roles and create
+entirely new ones. My goal is to be an active builder in this transition, not a spectator.
+
+I aspire to build AI-powered intelligent systems that solve meaningful real-world problems,
+particularly in the fields of Medicine, Finance and Economics among other fields.
+AI is the future, and I am engineering the version of it I want to live in.
+
+My long-term vision is to contribute to the development of a Jarvis-like personal AI — a
+system that knows you, reasons for you, and acts on your behalf — building toward that
+one project, one agent, one locally-running model at a time.
+
+I am passionate about blending creativity with cutting-edge technology — turning complex
+ideas into simple, powerful digital experiences that make a genuine impact.
 
 CONTACTS.
-To get in contact with me:
 Full Name: Lewis Miano Warui
 Email: lewisino666@gmail.com
 LinkedIn: https://www.linkedin.com/in/lewis-miano-b91329321/
@@ -83,5 +145,5 @@ GitHub: https://github.com/Ole-Lewi
 Tel: +254716652003
 WhatsApp: +254716652003
 Telegram: +254743748337
-FaceBook: Sino Si
-Twitter(X): Kol Mi Laywih
+Facebook: Sino Si
+Twitter(X): Dynasty
