@@ -3,6 +3,7 @@ OFFLINE_MODE = False  # Change to True when offline
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+import streamlit as st
 
 # Load environment variables
 load_dotenv()
@@ -49,10 +50,11 @@ vectorstore = FAISS.load_local(
 )
 
 # ─── Modern Retrieval Chain (replaces RetrievalQA) ───────────────────────────
-from langchain.chains import RetrievalQA
+from langchain.chains import ConversationalRetrievalChain
+from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 
-Prompt = PromptTemplate(
+custom_prompt = PromptTemplate(
     input_variables=["context", "question"],
     template="""
 You are Lynne, a personal AI assistant representing Lewis Miano Warui (also known as Lincoln).
@@ -67,6 +69,7 @@ When describing Lewis, always prioritize his skills and experience in this exact
 
 Answer questions about Lewis based only on the context provided below.
 In any question asked, be brief and avoid giving unnecessary details.
+When asked about his skills and experience, you should explain in details the projects based on the area of expertise asked.
 Always give a final takeaway or summary of the answer in one sentence. i.e "would you like to know more about Lewis' experience in Agentic AI?"
 If the answer is not in the context, say "I don't have that information about Lewis."
 Be friendly, professional and concise.
@@ -79,21 +82,46 @@ Answer:
 """
 )
 
-qa_chain = RetrievalQA.from_chain_type(
+# Memory stored in Streamlit session state
+if "memory" not in st.session_state:
+    st.session_state.memory = ConversationBufferMemory(
+        memory_key="chat_history",
+        return_messages=True,
+        output_key="answer"
+    )
+
+qa_chain = ConversationalRetrievalChain.from_llm(
     llm=llm,
-    chain_type="stuff",
     retriever=vectorstore.as_retriever(),
-    chain_type_kwargs={"prompt": Prompt}
+    memory=st.session_state.memory,
+    combine_docs_chain_kwargs={"prompt": custom_prompt},
+    return_source_documents=False
 )
 # ─── Streamlit App ────────────────────────────────────────────────────────────
-import streamlit as st
+
 
 st.set_page_config(page_title="Lynne 🤖", page_icon="🦾")
 st.title("🦾 Lynne – Ask Me Anything About Lewis")
-st.write("Hi, I'm Lynne!")
+st.write("Hi, I'm Lynne! Ask me anything about Lewis.")
 
-user_query = st.text_input("Ask something about me...")
+# Display chat history
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []
+
+user_query = st.chat_input("Ask something about me...")
+
 if user_query:
     with st.spinner("Thinking... 🤔"):
-        answer = qa_chain.invoke({"query": user_query})["result"]
-        st.markdown(f"### 🤖 Lynne:\n{answer}")
+        response = qa_chain.invoke({"question": user_query})
+        answer = response["answer"]
+
+        # Store in chat history
+        st.session_state.chat_history.append(("You", user_query))
+        st.session_state.chat_history.append(("Lynne", answer))
+
+# Render chat history
+for role, message in st.session_state.chat_history:
+    if role == "You":
+        st.chat_message("user").write(message)
+    else:
+        st.chat_message("assistant").write(message)
