@@ -41,7 +41,7 @@ vectorstore = FAISS.from_documents(chunks, embeddings)
 vectorstore.save_local("faiss_index")
 print("Vector store created and saved locally as 'faiss_index'")
 
-# ─── Reload Vectorstore ───────────────────────────────────────────────────────
+# ─── Reload Vectorstore ──────────────────────────────────────────────
 vectorstore = FAISS.load_local(
     "faiss_index",
     embeddings,
@@ -49,24 +49,14 @@ vectorstore = FAISS.load_local(
 )
 
 # ─── Modern Retrieval Chain (replaces RetrievalQA) ───────────────────────────
-from langchain.chains.retrieval import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_core.prompts import ChatPromptTemplate
+from langchain.chains import RetrievalQA
 
-prompt = ChatPromptTemplate.from_template("""
-You are Lynne, a personal AI assistant representing Lewis Miano Warui.
-His first description should entail Agentic AI followed by Fine Tuning, Prompt Engineering, Machine Learning and later Software Development. 
-Answer questions about Lewis based only on the context provided below.
-If the answer is not in the context, say "I don't have that information about Lewis."
-Be friendly, professional and concise.
+qa_chain = RetrievalQA.from_chain_type(
+    llm=llm,
+    chain_type="stuff",
+    retriever=vectorstore.as_retriever()
+)
 
-Context: {context}
-
-Question: {input}
-""")
-
-combine_docs_chain = create_stuff_documents_chain(llm, prompt)
-qa_chain = create_retrieval_chain(vectorstore.as_retriever(), combine_docs_chain)
 
 # ─── Streamlit App ────────────────────────────────────────────────────────────
 import streamlit as st
@@ -78,6 +68,5 @@ st.write("Hi, I'm Lynne!")
 user_query = st.text_input("Ask something about me...")
 if user_query:
     with st.spinner("Thinking... 🤔"):
-        response = qa_chain.invoke({"input": user_query})
-        answer = response["answer"]
+        answer = qa_chain.invoke({"query": user_query})["result"]
         st.markdown(f"### 🤖 Lynne:\n{answer}")
