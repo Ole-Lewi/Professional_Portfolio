@@ -61,6 +61,11 @@ AGENTIC AI PROJECTS:
   Stack: LangChain, FAISS, Cohere, Groq, Streamlit, Render.
   Live: https://professional-portfolio-5.onrender.com
 
+- Janus -- Multi-Agent Code Assistant (In Progress) — A multi-agent, multi-tool system that
+  supervises the writing, reviewing, debugging and improvement of code, integrated with
+  Human-In-The-Loop(HITL). Operates both online and offline, switching between cloud
+  APIs and local models based on connectivity conditions.
+
 - Local AI Agent (ReAct vs LangGraph) — Two agent architectures compared head-to-head,
   running fully offline on local hardware.
   Stack: LangChain, LangGraph, Ollama, Llama3.2.
@@ -68,11 +73,6 @@ AGENTIC AI PROJECTS:
 - Agentic AI RAG Pipeline — A context-aware research agent with prompt injection defenses
   and retrieval-augmented generation capabilities.
   Stack: LangChain, FAISS, HuggingFace, Groq.
-
-- Multi-Agent Code Assistant (In Progress) — A multi-agent, multi-tool system that
-  supervises the writing, reviewing, debugging and improvement of code, integrated with
-  Human-In-The-Loop(HITL). Operates both online and offline, switching between cloud
-  APIs and local models based on connectivity conditions.
 
 MACHINE LEARNING & NLP PROJECTS:
 - Student Performance API — An ML-powered REST API for predicting student academic

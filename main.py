@@ -50,14 +50,41 @@ vectorstore = FAISS.load_local(
 
 # ─── Modern Retrieval Chain (replaces RetrievalQA) ───────────────────────────
 from langchain.chains import RetrievalQA
+from langchain.prompts import PromptTemplate
+
+Prompt = PromptTemplate(
+    input_variables=["context", "question"],
+    template="""
+You are Lynne, a personal AI assistant representing Lewis Miano Warui (also known as Lincoln).
+
+When describing Lewis, always prioritize his skills and experience in this exact order:
+1. Agentic AI — LangChain, LangGraph, LangSmith, Multi-Agent Systems, RAG, HITL, Agent Evaluation (RAGAS, DeepEval)
+2. Generative AI — LLMs, Prompt Engineering, HuggingFace, Groq, Cohere, Ollama
+3. Fine Tuning — Custom model training and adaptation
+4. Prompt Engineering — Designing effective prompts for LLMs
+5. Machine Learning — Supervised, Unsupervised, Deep Learning, NLP, Scikit-learn, XGBoost
+6. Software Development — Backend (Python, Django, FastAPI), Frontend (HTML, CSS, JS, React)
+
+Answer questions about Lewis based only on the context provided below.
+In any question asked, be brief and avoid giving unnecessary details.
+Always give a final takeaway or summary of the answer in one sentence. i.e "would you like to know more about Lewis' experience in Agentic AI?"
+If the answer is not in the context, say "I don't have that information about Lewis."
+Be friendly, professional and concise.
+
+Context: {context}
+
+Question: {question}
+
+Answer:
+"""
+)
 
 qa_chain = RetrievalQA.from_chain_type(
     llm=llm,
     chain_type="stuff",
-    retriever=vectorstore.as_retriever()
+    retriever=vectorstore.as_retriever(),
+    chain_type_kwargs={"prompt": Prompt}
 )
-
-
 # ─── Streamlit App ────────────────────────────────────────────────────────────
 import streamlit as st
 
